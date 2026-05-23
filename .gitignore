@@ -1,0 +1,51 @@
+# ── Dependencies ─────────────────────────────────────────────────────────────
+node_modules/
+.pnp
+.pnp.js
+
+# ── Build outputs ─────────────────────────────────────────────────────────────
+dist/
+build/
+out/
+.next/
+.turbo/
+
+# ── Environment & Secrets — NEVER commit these ────────────────────────────────
+.env
+.env.*
+.env.local
+.env.production
+.env.production.local
+.env.development
+.env.development.local
+.env.test
+.env.test.local
+
+# ── Firebase / Google credentials ─────────────────────────────────────────────
+# NOTE: firebase-applet-config.json is PUBLIC client config — safe to commit
+firebase-service-account.json
+*-firebase-adminsdk-*.json
+service-account.json
+credentials.json
+google-services.json
+GoogleService-Info.plist
+*.p12
+*.pem
+*.key
+
+# ── Coverage & logs ───────────────────────────────────────────────────────────
+coverage/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ── OS & Editor files ─────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# ── Misc ──────────────────────────────────────────────────────────────────────
+docker-compose.override.yml
+metadata.json

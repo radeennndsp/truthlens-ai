@@ -1,0 +1,11 @@
+{
+  "projectId": "truthlens-ai-20881",
+  "appId": "1:578610076563:web:4f234c35fd6702a0da2666",
+  "apiKey": "AIzaSyBvcvPGai4kiL8yW5FYcjABSbpGmMJi3vc",
+  "authDomain": "truthlens-ai-20881.firebaseapp.com",
+  "databaseURL": "https://truthlens-ai-20881-default-rtdb.asia-southeast1.firebasedatabase.app",
+  "firestoreDatabaseId": "(default)",
+  "storageBucket": "truthlens-ai-20881.firebasestorage.app",
+  "messagingSenderId": "578610076563",
+  "measurementId": "G-MJKBN43J6T"
+}

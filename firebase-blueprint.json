@@ -1,0 +1,39 @@
+{
+  "entities": {
+    "Scan": {
+      "title": "Screenshot Scan",
+      "description": "Represents a digital verification scan performed by the user.",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string", "description": "The UID of the user who performed the scan." },
+        "timestamp": { "type": "string", "format": "date-time" },
+        "trustScore": { "type": "number" },
+        "riskLevel": { "type": "string", "enum": ["low", "medium", "high"] },
+        "imageUrl": { "type": "string", "description": "Reference to the uploaded file." },
+        "summary": { "type": "string" },
+        "details": { "type": "object" }
+      },
+      "required": ["userId", "timestamp", "trustScore", "riskLevel"]
+    },
+    "UserProfile": {
+      "title": "User Profile",
+      "description": "Public user profile information.",
+      "type": "object",
+      "properties": {
+        "displayName": { "type": "string" },
+        "photoURL": { "type": "string" },
+        "scanCount": { "type": "number" }
+      }
+    }
+  },
+  "firestore": {
+    "/scans/{scanId}": {
+      "schema": "Scan",
+      "description": "Collection of verification scans."
+    },
+    "/users/{userId}": {
+      "schema": "UserProfile",
+      "description": "User profiles and metadata."
+    }
+  }
+}
